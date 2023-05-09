@@ -1,0 +1,16 @@
+.citation-container{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ 
+.citations{
+    transition: 2s;
+    display: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.citations-active{
+    display: block;
+    }

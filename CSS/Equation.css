@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calisto MT;
+    font-style: italic;
+    background-color: #000000;
+    color: white;
+    transition: 800ms;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #fff;
+    width: 6rem;
+    text-align: center;
+}
+
+.click {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: rgb(30, 255, 0);
+    transition: 800ms;
+}
+
+.click:hover {
+    box-shadow: 1px 2px 20px #00ffffea;
+    transition: 800ms;
+}
+
+.quadraticboxa {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 2px 20px #00ffffea;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 60rem;
+    margin-top: 3rem;
+   
+}
+
+.résultat {
+    margin-top: 1.2rem;
+    background: #ffbbed;
+    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 14px 14px;
+}
+
+.résultat-champ {
+    margin: 1rem;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    width: 17rem;
+    background: crimson;
+    border-radius: 0.4rem;
+    transition: 800ms;
+}
+
+.prompt {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+ul>li {
+    list-style: square;
+    text-align: left;
+    font-style: italic;
+}
+
+.résultat-champ:hover {
+    transform: scale(2);
+    transition: 800ms;
+}
+
+@media (min-width:280px) {
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        width: 2rem;
+        text-align: center;
+    }
+    .click {
+        padding: 5px;
+        border-radius: .2rem;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+        font-size: 15px;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 10px #00ffffea;
+        padding: 15px;
+        border-radius: 1rem;
+        width: 260px;
+        margin-top: 20px;
+    }
+    .résultat {
+        margin-top: 20px;
+        background: #ffbbed;
+        padding: 8px 10px;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 10px;
+        padding: 10px 10px;
+        width: 280px;
+        background: crimson;
+        border-radius: 10px;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 0.6rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+        font-size: 0.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:360px) {
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        width: 2.5rem;
+        text-align: center;
+    }
+    .click {
+        padding: 5px;
+        border-radius: .2rem;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+        font-size: 15px;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 10px #00ffffea;
+        padding: 15px;
+        border-radius: 1rem;
+        width: 340px;
+        margin-top: 20px;
+    }
+    .résultat {
+        margin-top: 20px;
+        background: #ffbbed;
+        padding: 8px 10px;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 10px;
+        padding: 10px 10px;
+        width: 280px;
+        background: crimson;
+        border-radius: 10px;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 0.6rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+        font-size: 0.7rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:520px) {
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        width: 2.5rem;
+        text-align: center;
+    }
+    .click {
+        padding: 5px;
+        border-radius: .2rem;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+        font-size: 15px;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 10px #00ffffea;
+        padding: 15px;
+        border-radius: 1rem;
+        width: 340px;
+        margin-top: 20px;
+    }
+    .résultat {
+        margin-top: 20px;
+        background: #ffbbed;
+        padding: 8px 10px;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 10px;
+        padding: 10px 10px;
+        width: 400px;
+        background: crimson;
+        border-radius: 10px;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 0.6rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+        font-size: 0.7rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:640px) {
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        width: 3rem;
+        text-align: center;
+    }
+    .click {
+        padding: 5px;
+        border-radius: .2rem;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+        font-size: 15px;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 10px #00ffffea;
+        padding: 15px;
+        border-radius: 1rem;
+        width: 600px;
+        margin-top: 20px;
+    }
+    .résultat {
+        margin-top: 20px;
+        background: #ffbbed;
+        padding: 8px 10px;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 10px;
+        padding: 10px 10px;
+        width: 400px;
+        background: crimson;
+        border-radius: 10px;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:800px) {
+    input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #fff;
+        width: 3rem;
+        text-align: center;
+    }
+    .click {
+        padding: 5px;
+        border-radius: .2rem;
+        width: 5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+        font-size: 15px;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 10px #00ffffea;
+        padding: 15px;
+        border-radius: 1rem;
+        width: 780px;
+        margin-top: 20px
+    }
+    .résultat {
+        margin-top: 20px;
+        background: #ffbbed;
+        padding: 8px 10px;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 10px;
+        padding: 10px 10px;
+        width: 400px;
+        background: crimson;
+        border-radius: 10px;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1024px) {
+    input {
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        border: 1px solid #fff;
+        width: 6rem;
+        text-align: center;
+    }
+    .click {
+        padding: 0.5rem;
+        border-radius: 2rem;
+        width: 6rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background: rgb(30, 255, 0);
+        transition: 800ms;
+    }
+    .click:hover {
+        box-shadow: 1px 2px 20px #00ffffea;
+        transition: 800ms;
+    }
+    .quadraticboxa {
+        display: inline-block;
+        text-align: center;
+        box-shadow: 1px 2px 20px #00ffffea;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        width: 60rem;
+        margin-top: 1.5rem;
+        /*       
+ */
+    }
+    .résultat {
+        margin-top: 1.2rem;
+        background: #ffbbed;
+        padding: 0.7rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0 0 14px 14px;
+    }
+    .résultat-champ {
+        margin: 1rem;
+        display: inline-block;
+        padding: 0.7rem 1rem;
+        width: 17rem;
+        background: crimson;
+        border-radius: 0.4rem;
+        transition: 800ms;
+    }
+    .prompt {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    ul>li {
+        list-style: square;
+        text-align: left;
+        font-style: italic;
+    }
+    .résultat-champ:hover {
+        transform: scale(2);
+        transition: 800ms;
+    }
+}
+#present{
+    margin: 2% 10% 2% 10%;
+    
+}
+#card_pres{
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 4%;
+    filter:  drop-shadow(2px 4px 8px #7b998d);
+}
+#card_pres:hover{
+    transform: scale(1.2);
+    transition: 1s ;
+    border-radius: 20px;
+    cursor: pointer;
+    filter:  drop-shadow(2px 4px 8px #7b998d);
+}
+#card_pres img{
+    
+    border-radius: 20px 20px 0 0;
+}
+.card-body{
+    color:#333
+}

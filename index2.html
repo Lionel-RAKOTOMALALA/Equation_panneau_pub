@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="IMAGES/Office35.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Doc/bootstrap.min.css">
+    <link rel="stylesheet" href="Doc/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Equation.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap-offline-docs-5.1/assets/js/docs.min.js">
+    <title>MathLAB</title>
+</head>
+
+<body id="bgcol" style="background-color: black;"> 
+    <div id="mySidenav" class="sidenav">
+        <p title="About W3Schools">W3Schools is a web developer's site.</p>
+        <a onclick="change1()" id="equation">
+            <span>
+                <div class="icon">
+                    <i class="bi bi-calculator"></i>
+                </div>
+            </span>
+        </a>
+        <a onclick="change2()" id="system_3inconue">
+            <span>
+                <div class="icon">
+                    <i class="bi bi-diagram-3"></i>
+                </div>
+            </span>
+        </a>
+        <a onclick="change3()" id="animation">
+            <span>
+                <div class="icon">
+                    <i class="bi bi-card-image"></i>
+                </div>
+            </span>
+        </a>
+        <a onclick="change4()" id="param">
+            <span>
+                <div class="icon">
+                    <i class="bi bi-book"></i>
+                </div>
+            </span>
+        </a>
+    </div>
+    
+    <div>
+        <div id="1" style="display: block;" class="containt">
+            <div class="quadraticbox">
+                <p class="entertext">Entrez votre équation</p>
+                <div class="quadeqbox">
+                    <input type="number" autocomplete="off" id="a">
+                    <span class="vboxvar">x<sup>2</sup>+</span>
+                    <input type="number" autocomplete="off" id="b">
+                    <span class="vboxvar">x+</span>
+                    <input type="number" autocomplete="off" id="c">
+                </div>
+                <button class="btn btn-primary calcbtn" onclick="quadcalc()">Résoudre <span style="font-style:italic;font-weight:bold;">&nbsp;f(x)</span></button><br>
+                <button class="btn btn-danger delbtn" onclick="clearall()">&nbsp;Remise à zéro du calculateur&nbsp;</button>
+                <div class="dbox">
+                    <p id="dtext" style="color: black;">Veuillez compléter</p>
+                </div>
+                <div class="resultbox">
+                    <div class="xcont">
+                        <p class="xsmallbox">x'&nbsp;= <span id="x1"></span></p>
+                    </div>
+                    <div class="xcont">
+                        <p class="xsmallbox">x"&nbsp;= <span id="x2"></span></p>
+                    </div>
+                </div>
+            </div>
+            <script src="JAVASCRIPT/script.js"></script>
+            <script>
+                var bloc= document.querySelector(".quadraticbox");
+                
+                function defile(){
+                    bloc.style.transform = 'translateX(0%)'
+                }
+                window.onload = defile;
+                
+            </script>
+        </div>
+        <div id="2" style="display: none;">
+            <center>
+                <div class="quadraticboxa" id="equation_lin"><br>
+                    <h2 style="font-family: Bell MT; font-style:italic;">Insérez les chiffres selon votre convenance de sorte à ce que :</h2><br>
+                    <p>
+                        <ul style="margin-bottom: 2rem;">
+                            <li>Tous les chiffres ne soient pas tous les mêmes</li>
+                            <li>Tous les chiffres ne soient pas tous les mêmes</li>
+                            <li>Tous les chiffres ne soient pas trop élevés</li>
+                            <li>Les chiffres ne soient pas consécutifs</li>
+                            <li>Un des chiffres soit supérieur de deux rangs au dessus au cas d'une consécutivité non aléatoire ou "fatidique"</li>
+                        </ul>
+                    </p>
+                    <input type="number" id="a111" onfocus="if(this.value=='a111') {this.value=' '}" onblur="if(this.value==' ') {this.value='a111'}"> x+&nbsp;
+                    <input type="number" id="b111" onfocus="if(this.value=='b111') {this.value=' '} " onblur="if(this.value==' ') {this.value='b111'} "> y+&nbsp;
+                    <input type="number" id="c111" onfocus="if(this.value=='c111') {this.value=' '} " onblur="if(this.value==' ') {this.value='c111'} "> z =&nbsp;
+                    <input type="number" id="d111" onfocus="if(this.value=='d111') {this.value=' '} " onblur="if(this.value==' ') {this.value='d111'} "> <br><br>
+                    <input type="number" id="e111" onfocus="if(this.value=='e111') {this.value=' '} " onblur="if(this.value==' ') {this.value='e111'} "> x+&nbsp;
+                    <input type="number" id="f111" onfocus="if(this.value=='f111') {this.value=' '} " onblur="if(this.value==' ') {this.value='f111'} "> y+&nbsp;
+                    <input type="number" id="g111" onfocus="if(this.value=='g111') {this.value=' '} " onblur="if(this.value==' ') {this.value='g111'} "> z =&nbsp;
+                    <input type="number" id="h111" onfocus="if(this.value=='h111') {this.value=' '} " onblur="if(this.value==' ') {this.value='h111'} "><br><br>
+                    <input type="number" id="i111" onfocus="if(this.value=='i111') {this.value=' '} " onblur="if(this.value==' ') {this.value='i111'} "> x+&nbsp;
+                    <input type="number" id="j111" onfocus="if(this.value=='j111') {this.value=' '} " onblur="if(this.value==' ') {this.value='j111'} "> y+&nbsp;
+                    <input type="number" id="k111" onfocus="if(this.value=='k111') {this.value=' '} " onblur="if(this.value==' ') {this.value='k111'} "> z =&nbsp;
+                    <input type="number" id="l111" onfocus="if(this.value=='l111') {this.value=' '} " onblur="if(this.value==' ') {this.value='l111'} "> <br><br>
+                    <button onclick="solve()" class="click">Résoudre</button>
+                    <div class="résultat">
+                        <div class="résultat-champ">
+                            <p class="prompt">x&nbsp;= <span id="ikse"></span></p>
+                        </div>
+                        <div class="résultat-champ">
+                            <p class="prompt">y&nbsp;= <span id="igreq"></span></p>
+                        </div>
+                        <div class="résultat-champ">
+                            <p class="prompt">z&nbsp;= <span id="zed"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <script src="JAVASCRIPT/Equation.js"></script>
+        </div>
+        <div id="3" style="display: none;">
+            <div class="love">
+                <div class="slider example-slider">
+                    <div class="slider__slides">
+                        <div class="slide m--blend-green m--active-slide">
+                            <div class="slide__inner">
+                                <div class="slide__mask">
+                                    <div class="slide__mask-inner"></div>
+                                </div>
+                                <div class="slide__content">
+                                    <h2 class="slide__heading">
+                                        <div class="slide__heading-line">
+                                            <span style="filter:  drop-shadow(2px 4px 8px #7b998d);">Mandranto</span>
+                                        </div>
+                                        <div class="slide__heading-line">
+                                            <span style=" filter:  drop-shadow(2px 4px 8px #7b998d);">Fitahiana</span>
+                                        </div>
+                                    </h2>
+                                    <button type="button" class="slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide m--blend-dark">
+                            <div class="slide__inner">
+                                <div class="slide__mask">
+                                    <div class="slide__mask-inner"></div>
+                                </div>
+                                <div class="slide__content">
+                                    <h2 class="slide__heading">
+                                        <div class="slide__heading-line">
+                                            <span style=" filter:  drop-shadow(2px 4px 8px black);;">Fanilo</span>
+                                        </div>
+                                        <div class="slide__heading-line">
+                                            <span></span>
+                                        </div>
+                                    </h2>
+                                    <button type="button" class="slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide m--blend-red">
+                            <div class="slide__inner">
+                                <div class="slide__mask">
+                                    <div class="slide__mask-inner"></div>
+                                </div>
+                                <div class="slide__content">
+                                    <h2 class="slide__heading">
+                                        <div class="slide__heading-line">
+                                            <span style="filter:  drop-shadow(2px 4px 8px rgb(10, 10, 10));">Lahiniriko</span>
+                                        </div>
+                                        <div class="slide__heading-line">
+                                            <span style="filter:  drop-shadow(2px 4px 8px rgb(10, 10, 10));">(Tchang)</span>
+                                        </div>
+                                    </h2>
+                                    <button type="button" class="slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide m--blend-blue">
+                            <div class="slide__inner">
+                                <div class="slide__mask">
+                                    <div class="slide__mask-inner"></div>
+                                </div>
+                                <div class="slide__content">
+                                    <h2 class="slide__heading">
+                                        <div class="slide__heading-line">
+                                            <span style="filter:  drop-shadow(2px 4px 8px rgb(72, 212, 247));">Lionel</span>
+                                        </div>
+                                        <div class="slide__heading-line">
+                                            <span style="filter:  drop-shadow(2px 4px 8px rgb(72, 212, 247));">Just Lionel</span>
+                                        </div>
+                                    </h2>
+                                    <button type="button" class="slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="nav">
+                        <div class="nav__bgs">
+                            <div class="nav__bg m--navbg-green m--active-nav-bg"></div>
+                            <div class="nav__bg m--navbg-dark"></div>
+                            <div class="nav__bg m--navbg-red"></div>
+                            <div class="nav__bg m--navbg-blue"></div>
+                        </div>
+                        <div class="nav__controls">
+                            <button class="nav__control">
+                    Mandranto 
+                    <span class="nav__control-progress"></span>
+                  </button>
+                            <button class="nav__control">
+                    Fanilo
+                    <span class="nav__control-progress"></span>
+                  </button>
+                            <button class="nav__control">
+                    Lahiniriko
+                    <span class="nav__control-progress"></span>
+                  </button>
+                            <button class="nav__control">
+                    Lionel
+                    <span class="nav__control-progress"></span>
+                  </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="love__credits">
+                    <div class="love__credits-close"></div>
+                    <h2 class="love__credits-heading" style="margin-top: 50px;">Remerciement: </h2>
+                    <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="love__credits-img" />
+                    <h3 class="love__credits-name" style="margin-bottom: 100px;"> Mr Venot </h3>
+                    <h2 class="love__credits-heading"><span> <i class="bi bi-facebook"></i></span></h2>
+                    <a href="htttps://facebook.com/Ratsiandavana Mandranto" target="_blank" class="love__credits-link">mandranto_fit</a>
+                    <a href="htttps://facebook.com/mandranto_fit" target="_blank" class="love__credits-link">Fa Nilo</a>
+                    <a href="htttps://facebook.com/mandranto_fit" target="_blank" class="love__credits-link">Lionel Ar'k</a>
+                    <a href="htttps://facebook.com/mandranto_fit" target="_blank" class="love__credits-link">Lahiniriko</a>
+                    <h4 class="love__credits-blend">Masque de Filtre Global</h4>
+                    <div class="colorful-switch">
+                        <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+                        <label class="colorful-switch__label" for="colorful-switch-cb">
+                  <span class="colorful-switch__bg"></span>
+                  <span class="colorful-switch__dot"></span>
+                  <span class="colorful-switch__on">
+                    <span class="colorful-switch__on__inner"></span>
+                  </span>
+                  <span class="colorful-switch__off"></span>
+                </label>
+                    </div>
+                </div>
+            </div>
+            <script src="JAVASCRIPT/javascript.js"></script>
+        </div>
+        <div id="4" style="display: none;">
+            
+            <div class="citation-container">
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="present">
+                <div class="col">
+                  <div id="card_pres" class="card shadow-sm">
+                    <img src="./IMAGES/2nd-degre.png" alt="" height="200px" >
+        
+                    <div class="card-body">
+                        <h4>Ceci est la première box</h4>
+                        <h6> du niveau du design: Nous avons fait un texte fondu(pour comprendre, tapez 👉🏻 ctrl + R)</h6>
+                        <h6>du niveau back-End: il permet de résoudre dans l'ensemble complexe, par contre il ne résoud pas si l'equation est de prémière dégré(a = 0)</h6>  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="card_pres" class="card shadow-sm">
+                    <img src="./IMAGES/equation_lineaire.png" alt="" height="200px">
+        
+                    <div class="card-body" style="height: 220px;">
+                        <h4>Ceci est la deuxième box</h4>
+                        <h6> du niveau du design: Nous avons personnalisé les couleurs, bouttons, champs pour mettre à l'aise l'utilisateur</h6>
+                        <h6>du niveau back-End: il réponds évidemment au critère d'exigence</h6>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col" >
+                  <div id="card_pres" class="card shadow-sm">
+                    <img src="./IMAGES/Polish_20220524_135013813.jpg" alt="" height="200px" >
+        
+                    <div  class="card-body" style="height: 220px;">
+                        <h4>Ceci est la troisième box</h4>
+                        <h6>Il s'agit d'un slider(panneau publicitaire) qui se défile automatiquement dans un intervalle de temps</h6>
+                    </div>
+                  </div>
+                </div>
+                
+        </div>
+        
+        <div class="citations citations-active">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+               En Mathematique , un ensemble est "une collection" d'objets appelés éléments
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">Il n'y a pas de répétition dans un ensemble 
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+            E = MC<sup>2</sup>    
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Einstein (Théorie de la relativité)
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                Dans un triangle réctangle , le carré de l'hypothénus est égale au somme des carrés des 2 autre coté    
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Phytagore
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+            U<sub>n</sub> est un suite arithmétique si U<sub>n+1</sub>- U<sub>n</sub> = r / r E ¦R     
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                suite des nombres Réells
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                - Je vous prépare la batmoto monsieur ?
+                - En pleine journée Alfred ? Pas très subtile.
+                - La Lamborghini alors... beaucoup plus subtile.
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                The Dark Knight: Le Chevalier Noir - Alfred et Batman (2008)
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                Freeze, t'es givré !
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Batman & Robin - Batman à Mr Freeze (1997)
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                La peur est un outil. Cette lumière qui déchire le ciel, ce n’est pas qu’un appel à l’aide. C’est unavertissement.
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Batman - Batman (2022)
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                - Pourquoi tombons nous Bruce ?
+
+                - Pour mieux apprendre à nous relever.
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Batman Begins - Thomas Wayne à Bruce Wayne 8 ans (2005)
+            </p>
+        </div>
+        <div class="citations">
+            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C’est comme cela que
+                ça commence, monsieur. De la fureur, de la fièvre, un sentiment d’impuissance, qui rend les hommes bien...
+                cruels.
+            </h4>
+            <p id="font2" style="margin: 5% auto 2% 38%;">
+                Batman vs Superman : l'aube de la justice, Alfred à Batman (2016)
+            </p>
+        </div>
+    </div>
+    <div class="pointPoint">
+        <span class="pointActive"></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+    </div>
+    
+        <style>
+            .citation-container{
+overflow: hidden;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.citations{
+transition: 2s;
+display: none;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+.citations-active{
+display: block;
+}      
+</style>
+<script>
+    var point=document.querySelectorAll(".pointPoint span");
+var citations=document.querySelectorAll(".citations");
+var counter2=0;
+setInterval(function () {
+    document.querySelector(".pointActive").classList.remove("pointActive");
+    point[counter2].classList.add("pointActive");
+    document.querySelector(".citations-active").classList.remove("citations-active");
+    citations[counter2].classList.add("citations-active");
+    counter2++;
+    if(counter2==point.length){counter2=0;
+    }
+},4500);
+
+</script>  
+    
+</body>
+
+</html>

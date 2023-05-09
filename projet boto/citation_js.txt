@@ -1,0 +1,13 @@
+ // animation au niveau du footer avec lespoint et les slider
+    var point=document.querySelectorAll(".pointPoint span");
+    var citations=document.querySelectorAll(".citations");
+    var counter2=0;
+    setInterval(function () {
+        document.querySelector(".pointActive").classList.remove("pointActive");
+        point[counter2].classList.add("pointActive");
+        document.querySelector(".citations-active").classList.remove("citations-active");
+        citations[counter2].classList.add("citations-active");
+        counter2++;
+        if(counter2==point.length){counter2=0;
+        }
+    },4500);

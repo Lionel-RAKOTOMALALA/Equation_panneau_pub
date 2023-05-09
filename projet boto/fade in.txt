@@ -1,0 +1,20 @@
+// ======================================================= DEBUT
+// code source pour que Tous les titres du site (avec la police Far From Home) apparaîssent avec un fade in en démarrant de la gauche (mouvement de gauche à droite)
+const title = document.querySelector(".titre");
+const valueOfTitle = title.textContent;
+let j = 0;
+
+// Les sous-titres quant à eux (en dessous du titre) apparaîssent progressivement (opacité de 0% à 100%)
+const subtitle = document.querySelector(".description");
+
+function opacityOfSubtitle() {
+    subtitle.style.opacity = j;
+    if (j < 1) {
+        setTimeout("opacityOfSubtitle()", 100);
+        j += 0.1;
+    }
+}
+
+title.style.transform = "translateX(0%)"
+opacityOfSubtitle();
+// ======================================================= FIN

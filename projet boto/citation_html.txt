@@ -1,0 +1,94 @@
+<div class="citation-container">
+                        <div class="citations citations-active">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">La seule façon raisonnable de vivre en ce bas monde, 
+                                c'est en dehors des règles.
+                            </h4>
+                            <p id="font2">The Dark Knight : Le Chevalier Noir 
+                                Le Joker à Batman (2008)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                Soït on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant.
+                            </h4>
+                            <p id="font2">
+                                The Dark Knight : Le Chevalier Noir - Harvey Dent (2008)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                Le héros peut être en chacun, même en celui qui fait une chose aussi simple et rassurante que mettre un
+                                manteau sur les épaules d’un garçon et ainsi lui faire comprendre que le monde ne s’est pas écroulé.
+                            </h4>
+                            <p id="font2">
+                                The Dark Knight Rises - Batman à James Gordon (2012)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                Ah ! Tu crois que l'obscurité est ton allié. Tu n'a fait qu'adopter la pénombre. Moi je suis né dedans, j'ai été
+                                 façonné par elle. Je n'ai découvert la lumière qu'a l'âge d'homme, et alors, elle m'a juste paru AVEUGLANTE !
+                            </h4>
+                            <p id="font2">
+                                The Dark Knight Rises - Bane à Batman (2012)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                - Je vous prépare la batmoto monsieur ?
+                                - En pleine journée Alfred ? Pas très subtile.
+                                - La Lamborghini alors... beaucoup plus subtile.
+                            </h4>
+                            <p id="font2">
+                                The Dark Knight: Le Chevalier Noir - Alfred et Batman (2008)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                Freeze, t'es givré !
+                            </h4>
+                            <p id="font2">
+                                Batman & Robin - Batman à Mr Freeze (1997)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                La peur est un outil. Cette lumière qui déchire le ciel, ce n’est pas qu’un appel à l’aide. C’est unavertissement.
+                            </h4>
+                            <p id="font2">
+                                Batman - Batman (2022)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                - Pourquoi tombons nous Bruce ?
+
+                                - Pour mieux apprendre à nous relever.
+                            </h4>
+                            <p id="font2">
+                                Batman Begins - Thomas Wayne à Bruce Wayne 8 ans (2005)
+                            </p>
+                        </div>
+                        <div class="citations">
+                            <h4 class="text-white text-center mt-5 p-3" id="font1">
+                                Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C’est comme cela que
+                                ça commence, monsieur. De la fureur, de la fièvre, un sentiment d’impuissance, qui rend les hommes bien...
+                                cruels.
+                            </h4>
+                            <p id="font2">
+                                Batman vs Superman : l'aube de la justice, Alfred à Batman (2016)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pointPoint">
+                        <span class="pointActive"></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                    </div>
+                </div>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lallor {
+    background-color: #000000;
+    display: block;
+    text-align: center;
+    border: 0;
+    filter: drop-shadow(2px 4px 8px rgb(72, 212, 247));
+    margin: 10px 250px 10px 250px;
+    padding: 10px 50px 10px 50px;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+}
+
+.btna {
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px rgb(72, 212, 247));
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1.4rem 0 0;
+    padding: 8px;
+    font-size: 1.1rem;
+    background-color: rgb(72, 212, 247);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: -4rem;
+    margin-top: -2rem;
+}
+
+.containing {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.contienf {
+    margin: 1rem;
+    display: inline-block;
+    width: 25rem;
+    padding: 10px 0 10px 0;
+    background: crimson;
+    border-radius: 0.4rem;
+}
+
+ul>li {
+    list-style: square;
+    text-align: left;
+    font-family: bell MT;
+    font-style: italic;
+}
+
+.citation-container{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ 
+.citations{
+    transition: 2s;
+    display: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 10% auto 2% 80%;
+}
+p #font2{
+    margin: 10% auto 2% 80%;
+}
+.citations-active{
+    display: block;
+}

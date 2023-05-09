@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calisto MT;
+    font-style: italic;
+    background-color: #000000;
+}
+
+#mySidenav a {
+    overflow-y: auto;
+    z-index: 1;
+    position: absolute;
+    left: -80px;
+    transition: 0.5s;
+    padding: 20px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    filter: drop-shadow(2px 4px 8px rgb(72, 212, 247));
+    cursor: pointer;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#equation {
+    top: 20px;
+    background-color: rgb(255, 230, 0);
+    color: #000000;
+}
+
+#system_3inconue {
+    top: 100px;
+    background-color: rgb(72, 212, 247);
+}
+
+#animation {
+    top: 180px;
+    background-color: rgb(241, 0, 72);
+}
+
+#param {
+    top: 260px;
+    background-color: rgb(6, 179, 0);
+}
+
+.heading {
+    text-align: center;
+}
+
+.containt {
+    display: block;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.quadraticbox {
+    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 2px 20px #00ffffea;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 40rem;
+    transform: translateX(-200%);
+    transition: 1.5s;
+}
+
+.quadeqbox {
+    display: block;
+}
+
+.dbox {
+    background: #7a7979;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 14px 14px 0 0;
+}
+
+.dbox p {
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.resultbox {
+    margin-top: 0.5rem;
+    background: #ffbbed;
+    color: white;
+    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 14px 14px;
+}
+
+.xsmallbox {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.xcont {
+    margin: 1rem;
+    display: inline-block;
+    width: 17rem;
+    padding: 0.5rem 0.7rem;
+    background: crimson;
+    border-radius: 0.4rem;
+}
+
+.calcbtn {
+    margin: 1.4rem 0 0;
+    padding: 8px 5rem;
+    font-size: 1.1rem;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.delbtn {
+    margin: 1.4rem 0 0;
+    padding: 8px 10rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #000000;
+    width: 6rem;
+    text-align: center;
+}
+
+.eachbox {
+    margin-top: 1rem;
+}
+
+.entertext {
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.vboxvar {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3c3c3c;
+    padding: 0.7rem;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .resultbox {
+        flex-direction: column;
+    }
+    .quadraticbox {
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .containt {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .vboxvar {
+        margin: 0 0.2rem;
+    }
+    input {
+        width: 3rem;
+    }
+    .dbox p {
+        font-size: 0.9rem;
+    }
+    .footer p {
+        font-size: 1rem;
+    }
+}
+
+
